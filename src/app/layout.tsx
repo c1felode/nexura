@@ -2,11 +2,10 @@ import type { Metadata } from "next";
 import { Inter, DM_Sans } from 'next/font/google'
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { Footer, Header } from "@/components";
 
-const dmSans = DM_Sans({
-  subsets:['latin'],
-  variable:'--font-sans'}
-)
+
+const dmSans = DM_Sans({subsets:['latin'],variable:'--font-sans'})
 
 const inter = Inter({
   subsets: ['latin'],
@@ -28,7 +27,7 @@ export default function RootLayout({
       lang="en"
       className={cn("font-sans", dmSans.variable, inter.variable)}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col"><Header/><div className="container mx-auto">{children}</div><Footer/></body>
     </html>
   );
 }
