@@ -5,8 +5,8 @@ type heroClass = {
 export const Hero: React.FC<heroClass> = ({className}) => {
     return (
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center lg:pt-32">
-            <p className="animate-typing mx-auto -mt-4 tracking-tight text-slate-700 sm:mt-6 text-xl overflow-hidden whitespace-nowrap w-fit border-r-2 border-slate-700 pr-1">
-                Welcome to Nexura
+            <p className="mx-auto -mt-4 tracking-tight text-slate-700 sm:mt-6 text-xl overflow-hidden whitespace-nowrap border-r-2 border-slate-700 pr-1 animate-typing animate-caret">
+                Welcome to <span className="font-semibold">Nexura</span>
             </p>
 
 
@@ -19,13 +19,13 @@ export const Hero: React.FC<heroClass> = ({className}) => {
                 <span className="inline-block animate-fade-up-7"> Xarita Qo'llanmasi</span>
             </h1>
 
-            <p className="mx-auto mt-9 max-w-2xl text-lg tracking-tight text-slate-700 sm:mt-6">
+            <p className="animate-fade-in mx-auto mt-9 max-w-2xl text-lg tracking-tight text-slate-700 sm:mt-6">
                 <span className="inline-block">Bring functionalities of other apps</span>
                 <span className="inline-block">into your Notion workspaces.</span>
             </p>
 
             <div className="mt-12 flex flex-col justify-center gap-y-5 sm:mt-10 sm:flex-row sm:gap-y-0 sm:gap-x-6">
-                <a className="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900 animate-fade-in-left"
+                <a className="animate-fade-up-7 group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900 animate-fade-in-left"
                     href="#">
                     <svg stroke="currentColor" fill="currentColor" strokeWidth="0" role="img" viewBox="0 0 24 24"
                         aria-hidden="true" className="h-3 w-3 flex-none" height="1em" width="1em"
@@ -36,7 +36,7 @@ export const Hero: React.FC<heroClass> = ({className}) => {
                     </svg>
                     <span className="ml-3">Add to Firefox</span>
                 </a>
-                <div className="relative flex flex-1 flex-col items-stretch sm:flex-none" data-headlessui-state="">
+                <div className="animate-fade-up-5 relative flex flex-1 flex-col items-stretch sm:flex-none" data-headlessui-state="">
                     <button className="group inline-flex ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300 animate-fade-in-right" id="headlessui-menu-button-:r4:" aria-haspopup="true" aria-expanded="false" data-headlessui-state="" type="button">
                         <svg stroke="currentColor" fill="currentColor" strokeWidth="0" role="img" viewBox="0 0 24 24" aria-hidden="true" className="h-3 w-3 flex-none fill-current text-blue-600" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"></path></svg>
