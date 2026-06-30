@@ -1,4 +1,5 @@
 import { Info, Map } from "lucide-react";
+import Link from "next/link";
 
 type heroClass = {
     className?: string;
@@ -22,22 +23,22 @@ export const Hero: React.FC<heroClass> = ({className}) => {
             </h1>
 
             <p className="animate-fade-in mx-auto mt-9 max-w-2xl text-lg tracking-tight text-slate-700 sm:mt-6">
-                <span className="inline-block">Bring functionalities of other apps</span>
-                <span className="inline-block">into your Notion workspaces.</span>
+                <span className="inline-block">Some description</span>
+                <span className="inline-block">about this website</span>
             </p>
 
             <div className="mt-12 flex flex-col justify-center gap-y-5 sm:mt-10 sm:flex-row sm:gap-y-0 sm:gap-x-6">
-                <a className="animate-fade-up-7 group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900 animate-fade-in-left"
-                    href="#">
+                <Link className="animate-fade-up-7 group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900 animate-fade-in-left"
+                    href="/dashboard">
                     <Map/>
                     <span className="ml-3">Xaritani ko'rish</span>
-                </a>
-                <div className="animate-fade-up-5 relative flex flex-1 flex-col items-stretch sm:flex-none" data-headlessui-state="">
+                </Link>
+                <Link href="/about" className="animate-fade-up-5 relative flex flex-1 flex-col items-stretch sm:flex-none" data-headlessui-state="">
                     <button className="group inline-flex ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300 animate-fade-in-right" id="headlessui-menu-button-:r4:" aria-haspopup="true" aria-expanded="false" data-headlessui-state="" type="button">
                         <Info/>
-                        <span className="ml-3">Download for Mac</span>
+                        <span className="ml-3">Biz haqimizda</span>
                     </button>
-                </div>
+                </Link>
             </div>
 
         </div>

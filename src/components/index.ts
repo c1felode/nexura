@@ -1,3 +1,6 @@
 export {Header} from './header'
 export {Footer} from './footer'
 export {Hero} from './hero'
+export {SideBar} from './sidebar'
+export {AcademiesList} from './academies-list'
+export {default as MapComponent} from './map-component'

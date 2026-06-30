@@ -27,7 +27,7 @@ export default function RootLayout({
       lang="en"
       className={cn("font-sans", dmSans.variable, inter.variable)}
     >
-      <body className="min-h-full flex flex-col"><Header/><div className="container mx-auto">{children}</div><Footer/></body>
+      <body className="min-h-full">{children}</body>
     </html>
   );
 }
